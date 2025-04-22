@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AutoLux - E-commerce Car Dealership</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header, footer {
+      background: #1f1f1f;
+      color: white;
+      text-align: center;
+      padding: 1em 0;
+    }
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+    }
+    h1, h2 {
+      text-align: center;
+    }
+    .product-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .product-card {
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .product-card img {
+      width: 100%;
+      max-height: 150px;
+      object-fit: contain;
+    }
+    form {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      margin-top: 40px;
+    }
+    form input, form select, form button {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    footer p {
+      margin: 5px 0;
+    }
+    @media (max-width: 600px) {
+      .product-card img {
+        max-height: 100px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>AutoLux 🚗</h1>
+    <p>Premium Car Sales Platform</p>
+  </header>
+
+  <div class="container">
+    <h2>Available Cars</h2>
+    <div class="product-list">
+      <div class="product-card">
+        <img src="https://logo.clearbit.com/toyota.com" alt="Toyota">
+        <h3>Toyota</h3>
+      </div>
+      <div class="product-card">
+        <img src="https://logo.clearbit.com/hyundai.com" alt="Hyundai">
+        <h3>Hyundai</h3>
+      </div>
+      <div class="product-card">
+        <img src="https://logo.clearbit.com/lexus.com" alt="Lexus">
+        <h3>Lexus</h3>
+      </div>
+      <div class="product-card">
+        <img src="https://logo.clearbit.com/audi.com" alt="Audi">
+        <h3>Audi</h3>
+      </div>
+      <div class="product-card">
+        <img src="https://logo.clearbit.com/bmw.com" alt="BMW">
+        <h3>BMW</h3>
+      </div>
+      <div class="product-card">
+        <img src="https://logo.clearbit.com/astonmartin.com" alt="Aston Martin">
+        <h3>Aston Martin</h3>
+      </div>
+      <div class="product-card">
+        <img src="https://logo.clearbit.com/ford.com" alt="Ford">
+        <h3>Ford</h3>
+      </div>
+    </div>
+
+    <h2>Place an Order</h2>
+    <form>
+      <label for="carType">Type of Car:</label>
+      <input type="text" id="carType" name="carType" placeholder="SUV, Sedan, etc." required />
+
+      <label for="brand">Brand:</label>
+      <input type="text" id="brand" name="brand" placeholder="e.g., Toyota" required />
+
+      <label for="model">Model:</label>
+      <input type="text" id="model" name="model" placeholder="e.g., Corolla" required />
+
+      <label for="year">Year:</label>
+      <input type="number" id="year" name="year" min="1990" max="2025" required />
+
+      <label for="avgPrice">Average Amount ($):</label>
+      <input type="number" id="avgPrice" name="avgPrice" required />
+
+      <label for="budget">Budget ($):</label>
+      <input type="number" id="budget" name="budget" required />
+
+      <label for="contact">Customer Contact:</label>
+      <input type="text" id="contact" name="contact" value="aadelekan50@gmail.com, +2347065034785" readonly />
+
+      <button type="submit">Submit Order</button>
+    </form>
+  </div>
+
+  <footer>
+    <p>Contact us at aadelekan50@gmail.com</p>
+    <p>Phone: +2347065034785</p>
+    <p>&copy; 2025 AutoLux</p>
+  </footer>
+</body>
+
+</html>
